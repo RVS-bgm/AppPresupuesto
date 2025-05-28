@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="cabecero">
+        <div class="presupuesto">
+            <div class="presupuesto_titulo"> Presupuesto Disponible</div>
+            <div class="presupuesto_valor">1000</div>
+            <div class="presupuesto_ingreso limpiarEstilos">
+                <div class="presupuesto_ingreso--texto">Ingresos</div>
+                <div class="derecha">
+                    <div class="presupuesto_ingreso--valor">500</div>
+                    <div class="presupuesto_ingreso--porcentaje"> &nbsp;</div>
+                </div>
+            </div>
+
+            <div class="presupuesto_egreso limpiarEstilos">
+                <div class="presupuesto_egreso--texto">Ingresos</div>
+                <div class="derecha">
+                    <div class="presupuesto_egreso--valor">500</div>
+                    <div class="presupuesto_egreso--porcentaje"> &nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    <form id="forma">
+ <div class="agregar">
+    <div class="agregar_contenedor">
+        <select class="agregar_tipo" id="tipo">
+          <option value="ingreso" selected>+</option>
+          <option value="egreso">-</option>
+        </select>
+           
+    </div>
+         <input type="text" class="agregar_descripcion" placeholder="agregar agregar_descripcion" id="agregar_descripcion">
+         <input type="number" class="agregar_valor" placeholder="valor" id="valor"></input>
+         <button class="agregar_btn" onclick="agregarDato(event)"> <ion-icon name="checkbox-outline"></ion-icon> </button>
+       </div>
+    </form>
+
+  <div class="contenedor limpiarEstilos">
+    <div class="ingreso">
+        <h2 class="ingreso_titulo">ingresos</h2>
+        <div class="lista_Ingresos"></div>
+        <div class="elemento limpiarEstilos">
+            <div class="elemento_descripcion">Sueldo</div>
+            <div class="derecha limpiarEstilos">
+                <div class="elemento_valor">400</div>
+                <div class="elemento_eliminar">
+                    <button class="elemento_eliminar--btn">
+                        <ion-icon name="trash"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div> 
+
+
+
+
+
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
