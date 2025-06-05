@@ -16,15 +16,15 @@
                 <div class="presupuesto_ingreso--texto">Ingresos</div>
                 <div class="derecha">
                     <div class="presupuesto_ingreso--valor" id="IngresoTotal">0</div>
-                    <div class="prespuesto_ingreso--porcentaje">&nbsp;</div>
+                    <div class="presupuesto_ingreso--porcentaje">&nbsp;</div>
                 </div>
             </div>
 
             <div class="presupuesto_egreso limpiarEstilos">
                 <div class="presupuesto_egreso--texto">Egresos</div>
                 <div class="derecha">
-                    <div class="presupuesto_egreso--valor">100</div>
-                    <div class="prespuesto_egreso--porcentaje">&nbsp;</div>
+                    <div class="presupuesto_egreso--valor" id="EgresoTotal">0</div>
+                    <div class="presupuesto_egreso--porcentaje" id="porcentaje">0%</div>
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
             <div class="agregar_contenedor">
                 <select class="agregar_tipo" id="tipo">
                     <option value="ingreso" selected>+</option>
-                    <option value="egreso">-</option>
+                    <option value="egreso" selected>-</option>
                 </select>
                 <input type="text" class="agregar_descripcion" placeholder="Agregar descripción" id="descripcion">
                 <input type="number" class="agregar_valor" placeholder="valor" id="valor">
@@ -66,8 +66,8 @@
 
         <div class="egreso">
             <h2 class="egreso_titulo">Egresos</h2>
-            <div class="lista-egresos">
-                <div class="elemento limpiarEstilos">
+            <div class="lista-egresos" id="lista-egresos">
+ <!--            <div class="elemento limpiarEstilos">
                     <div class="elemento_descripcion">Ropa</div>
                     <div class="derecha limpiarEstilos">
                         <div class="elemento_valor">200</div>
@@ -79,9 +79,10 @@
                     </div>
                 </div>
             </div>
+            --> 
         </div>
     </div>
-
+  
 
 
 
